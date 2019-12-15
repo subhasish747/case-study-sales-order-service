@@ -1,0 +1,10 @@
+---
+applications:
+- name: 249071-sales-order-service
+  path: target\shopping-mq-service-1.0.0.jar
+  memory: 1G
+  services:
+    - rabbitMQService
+  routes:
+    - route: 249071-sales-order-service.cfapps.io
+    
