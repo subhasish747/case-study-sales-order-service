@@ -1,10 +1,11 @@
 ---
 applications:
-- name: 249071-sales-order-service
-  path: target\shopping-mq-service-1.0.0.jar
+- name: 249071-sales-order-service1
+  path: target\sales-order-service-1.0.0.jar
   memory: 1G
   services:
     - rabbitMQService
+    - 249071_Eureka
   routes:
-    - route: 249071-sales-order-service.cfapps.io
+    - route: 249071-sales-order-service1.cfapps.io
     

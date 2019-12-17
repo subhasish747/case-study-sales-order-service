@@ -32,6 +32,14 @@ public class CustomerService implements ICustomerService {
 	}
 	
 	
+	@Override
+	public CustomerSOS getCustSOS(Long id) {
+		log.info("getAllCustSOS--------start-------------");
+		return customerRepository.findById(id).orElse(new CustomerSOS());
+	}
+
+	
+	
 	
 	
 

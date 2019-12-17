@@ -9,5 +9,7 @@ public interface ICustomerService {
 	public void addCustSOS(CustomerSOS custSOS) ;
 	
 	public List<CustomerSOS> getAllCustSOS() ;
+	
+	public CustomerSOS getCustSOS(Long id);
 
 }
